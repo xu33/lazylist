@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import TableRow from './TableRow';
+import React, { Component } from "react";
+import TableRow from "./TableRow";
 
 class LazyList extends Component {
   render() {
@@ -13,8 +13,12 @@ class LazyList extends Component {
   }
 
   handleScroll = e => {
-    console.log(e.target.scrollTop);
+    // console.log(e.target.scrollTop);
   };
+
+  componentDidMount() {
+    updateProjection();
+  }
 }
 
 export default LazyList;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class TableRow extends Component {
   render() {
@@ -11,8 +11,7 @@ class TableRow extends Component {
 
   componentDidMount() {
     let { height } = this.refs.dom.getBoundingClientRect();
-    // cachedHeights[this.props.id] = height;
-    console.log(height);
+    heightCache[this.props.id] = height;
   }
 }
 
