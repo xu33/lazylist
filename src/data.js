@@ -13,7 +13,7 @@ const content = function() {
 
 let data = [];
 
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < 5000; i++) {
   data.push({
     id: uuid(),
     content: content()
